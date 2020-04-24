@@ -1,0 +1,27 @@
+# Common
+*~
+
+# Vim
+*.sw?
+
+# KDE
+.directory
+
+# OSX
+._*
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+
+# Docker
+/Dockerfile
+/.dockerignore
+
+# Git
+/.git
+/.gitignore
+
+# GitHub
+/.github
+/action.yml

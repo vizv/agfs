@@ -1,0 +1,5 @@
+name: Automated Gentoo From Scratch
+description: GitHub Action that builds Gentoo stages in Docker
+runs:
+  using: docker
+  image: Dockerfile

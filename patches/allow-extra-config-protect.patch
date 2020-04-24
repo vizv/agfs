@@ -1,0 +1,11 @@
+--- bootstrap.orig.sh	2020-04-23 02:06:34.308574047 -0700
++++ bootstrap.new.sh	2020-04-23 04:41:18.067588945 -0700
+@@ -306,7 +306,7 @@
+ [[ -x /usr/bin/gcc-config  ]] && GCC_CONFIG="/usr/bin/gcc-config"
+ 
+ # Allow portage to overwrite stuff
+-[[ $CONFIG_PROTECT != "-*"* ]] && export CONFIG_PROTECT="-*"
++[[ $CONFIG_PROTECT != "-* ${EXTRA_CONFIG_PROTECT}"* ]] && export CONFIG_PROTECT="-* ${EXTRA_CONFIG_PROTECT}"
+ 
+ # disable collision-protection
+ export FEATURES="${FEATURES} -collision-protect"

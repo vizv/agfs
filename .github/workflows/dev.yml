@@ -1,0 +1,21 @@
+name: Development Build
+
+on:
+  push:
+    branches: [ develop ]
+
+jobs:
+  stage-1:
+    runs-on: ubuntu-latest
+    name: Build stage 1
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+    - name: Run "agfs:info"
+      uses: ./
+      with:
+        args: info
+    - name: Run "agfs:bootstrap"
+      uses: ./
+      with:
+        args: bootstrap
